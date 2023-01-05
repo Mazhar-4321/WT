@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ var c=0;
+ function increment(){
+    if(c+1<=5)
+    c=c+1;
+    document.getElementById("id1").innerText=c+"";
+    document.getElementById("id1").style.color="black";
+ }
+ function decrement(){
+    if(c-1>=0)
+    c=c-1;
+    document.getElementById("id1").innerText=c+"";
+    document.getElementById("id1").style.color="blue";
+ }
+</script>
+<body>
+    <h1 id="id1" style="color: red;">0</h1>
+    <button onclick="increment()">Increment</button>
+    <button onclick="decrement()">Decrement</button>
+</body>
+</html>
